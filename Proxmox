@@ -1,3 +1,0 @@
-# Configuration
-Switched to free ceph-squid repositores and updated in shell using the command apt update && apt dist-upgrade
-Verified DNS settings, 75.75.75.75 (comcast) may change to 1.1.1.1 (cloudflare)
