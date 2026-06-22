@@ -44,3 +44,9 @@ Currently pursuing an Associates in Computer Technologies.
 | Windows Client | Windows 10 | Domain client |
 
 ---
+
+# Proxmox configuration
+
+##Repositories
+Disabled the default Proxmox enterprise repository and enabled the no-subscription (community) repository to allow package updates without a paid subscription. The same was done for ceph-squid even though it is not utilized at the moment. After ran command (apt update && apt dist-upgrade) to get the latest packages.
+Verified DNS settings, 75.75.75.75 (comcast) may change to 1.1.1.1 (cloudflare)
