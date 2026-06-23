@@ -58,4 +58,4 @@ Currently pursuing an Associates in Computer Technologies.
 - Boot drive was configured during Proxmox install. Second drive (2TB NVMe) was partitioned and added as directory storage with ext4 for additional VM storage. Note: ext4 does not support Proxmox snapshots
 
 ## Security
-- Installed and configured fail2ban to protect the Proxmox web interface (port 8006) and SSH against brute force attacks. A filter was created to detect failed Proxmox login attempts via the systemmd journal. IPs are banned for 1 hour after 3 failed attempts within a two day window
+- Installed and configured fail2ban to protect the Proxmox web interface (port 8006) and SSH against brute force attacks. A filter was created to detect failed Proxmox login attempts via the systemd journal. IPs are banned for 1 hour after 3 failed attempts within a two day window
