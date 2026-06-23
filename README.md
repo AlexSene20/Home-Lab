@@ -33,7 +33,7 @@ Currently pursuing an Associates in Computer Technologies.
 | XB7 | 10.0.0.1 | Static |
 | Switch | 10.0.0.2 | Static |
 | Proxmox Host | 10.0.0.10 | Static |
-| Gaming PC | 10.0.0.100 | Reserved |
+| Gaming PC | 10.0.0.102 | Reserved / Static |
 | DHCP Range | 10.0.0.100-253 | Dynamic |
 
 ---
