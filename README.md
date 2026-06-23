@@ -19,6 +19,7 @@ Currently pursuing an Associates in Computer Technologies.
 | Component | Spec |
 |-----------|------|
 | Motherboard | Asus B550 |
+| GPU | 1660 super |
 | CPU | 3700x |
 | RAM | 32GB |
 | Storage | 1tb and 2tb nvme SSD |
