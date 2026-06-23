@@ -48,5 +48,13 @@ Currently pursuing an Associates in Computer Technologies.
 # Proxmox configuration
 
 ## Repositories
-Disabled the default Proxmox enterprise repository and enabled the no-subscription (community) repository to allow package updates without a paid subscription. The same was done for ceph-squid even though it is not utilized at the moment. After ran command (apt update && apt dist-upgrade) to get the latest packages.
-Verified DNS settings, 75.75.75.75 (comcast) may change to 1.1.1.1 (cloudflare)
+- Disabled the default Proxmox enterprise repository and enabled the no-subscription (community) repository to allow package updates without a paid subscription. The same was done for ceph-squid even though it is not utilized at the moment because I only have one node. After ran command (apt update && apt dist-upgrade) to get the latest packages.
+
+## DNS Settings
+- Verified DNS settings, 75.75.75.75 (comcast) may change to 1.1.1.1 (cloudflare) for encrypted queries and privacy.
+
+## Storage
+- Boot drive was configured during Proxmox install. Second drive (2TB NVMe) was partitioned and added as directory storage with ext4 for additional VM storage. Note: ext4 does not support Proxmox snapshots
+
+## Security
+- Installed and configured fail2ban to protect the Proxmox web interface (port 8006) and SSH against brute force attacks. A filter was created to detect failed Proxmox login attempts via the systemmd journal. IPs are banned for 1 hour after 3 failed attempts within a two day window
