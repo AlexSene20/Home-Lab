@@ -14,6 +14,7 @@ Currently pursuing an Associates in Computer Technologies.
 |--------|-------|------|
 | Modem/router/AP | xfinity XB7 | WAN/Internet, DHCP, WiFi |
 | Switch | TP-Link TL-SG108PE V5.0 | LAN switching |
+
 NOTE: Will upgrade to dedicated modem, AP and install pfSense for routing capabilities on Proxmox VE
 
 ### Proxmox Host
