@@ -12,7 +12,7 @@ Currently pursuing an Associates in Computer Technologies.
 ### Network
 | Device | Model | Role |
 |--------|-------|------|
-| Modem/router/AP | xfinity XB7 | WAN/Internet, DHCP, WiFI |
+| Modem/router/AP | xfinity XB7 | WAN/Internet, DHCP, WiFi |
 | Switch | TP-Link TL-SG108PE V5.0 | LAN switching |
 
 ### Proxmox Host
