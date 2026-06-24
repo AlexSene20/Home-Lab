@@ -33,6 +33,7 @@ Currently pursuing an Associates in Computer Technologies.
 | XB7 | 10.0.0.1 | Static |
 | Switch | 10.0.0.2 | Static |
 | Proxmox Host | 10.0.0.10 | Static |
+| Windows Server | 10.0.0.20 | Static |
 | Gaming PC | 10.0.0.102 | Reserved / Static |
 | DHCP Range | 10.0.0.100-253 | Dynamic |
 
@@ -59,3 +60,27 @@ Currently pursuing an Associates in Computer Technologies.
 
 ## Security
 - Installed and configured fail2ban to protect the Proxmox web interface (port 8006) and SSH against brute force attacks. A filter was created to detect failed Proxmox login attempts via the systemd journal. IPs are banned for 1 hour after 3 failed attempts within a two day window
+
+# VM's / Containers
+
+## Windows Server
+| Setting | Value |
+|--------|--------|
+|VM ID | 100 |
+|CPU | 2 cores (host type) |
+|RAM | 6144MB (6GB) |
+|Disk | 80GB raw on 2TB NVMe |
+|Machine | q35 |
+|BIOS | OVMF (UEFI) |
+|TPM | Enabled |
+|Network | vmbr0 VirtIO |
+|IP Address | 10.0.0.20 (Static) |
+|Role | Active Directory / DNS (still setting up) |
+|Notes | UEFI/TPM does not support Proxmox snapshots. Daily backups configured retaining last 3|
+- Installed Windows Server 2022 Standard Evaluation (Desktop Experience)
+- Attached VirtIO drivers ISO as secondary CD drive to install for optimized disk and network performance
+- Installed QEMU guest agent for Proxmox integration
+- Configured static IP 10.0.0.20 outside of DHCP range
+
+# Next Steps
+- Promote server to domain controller and configure Active Directory and DNS
