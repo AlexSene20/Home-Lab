@@ -77,12 +77,25 @@ NOTE: Will upgrade to dedicated modem, AP and install pfSense for routing capabi
 |TPM | Enabled |
 |Network | vmbr0 VirtIO |
 |IP Address | 10.0.0.20 (Static) |
-|Role | Active Directory / DNS (still setting up) |
+|Role | Active Directory / DNS |
 |Notes | UEFI/TPM does not support Proxmox snapshots. Daily backups configured retaining last 3|
+
+## Installation
 - Installed Windows Server 2022 Standard Evaluation (Desktop Experience)
 - Attached VirtIO drivers ISO as secondary CD drive to install for optimized disk and network performance
 - Installed QEMU guest agent for Proxmox integration
 - Configured static IP 10.0.0.20 outside of DHCP range
 
+## Active Directory & DNS
+- Installed Active Directory Domain Services (AD DS) and DNS Server roles from Server Manager
+- Promoted server to domain controller
+- Created new forest with root domain homelab.local
+- DNS Server configured and running on 10.0.0.20
+- Verified AD DS and DNS listed and active in Server Manager
+- Created organizational units (OU) Users, Groups, Computers
+
 # Next Steps
-- Promote server to domain controller and configure Active Directory and DNS
+- create domain user accounts in the Users OU
+- created a windows 10 vm and join it to the domain
+- test domain login from windows 10 client
+- configure group policy
