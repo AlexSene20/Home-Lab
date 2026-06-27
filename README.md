@@ -91,6 +91,7 @@ NOTE: Will upgrade to dedicated modem, AP and install pfSense for routing capabi
 - DNS Server configured and running on 10.0.0.20
 - Verified AD DS and DNS listed and active in Server Manager
 - Created organizational units (OU) Users, Groups, Computers
+- Created domain user John Doe (jdoe) for in User OU for testing
 
 # Windows 10 Client VM
 | Setting | Value |
