@@ -63,9 +63,7 @@ NOTE: Will upgrade to dedicated modem, AP and install pfSense for routing capabi
 ## Security
 - Installed and configured fail2ban to protect the Proxmox web interface (port 8006) and SSH against brute force attacks. A filter was created to detect failed Proxmox login attempts via the systemd journal. IPs are banned for 1 hour after 3 failed attempts within a two day window
 
-# VM's / Containers
-
-## Windows Server
+# Windows Server VM
 | Setting | Value |
 |--------|--------|
 |VM ID | 100 |
@@ -93,9 +91,30 @@ NOTE: Will upgrade to dedicated modem, AP and install pfSense for routing capabi
 - DNS Server configured and running on 10.0.0.20
 - Verified AD DS and DNS listed and active in Server Manager
 - Created organizational units (OU) Users, Groups, Computers
+- 
+# Windows 10 Client VM
+| Setting | Value |
+|------- |--------|
+|VM ID | 101 |
+|CPU | 2 cores (host type) |
+|RAM | 4096MB (4GB) |
+|Disk | 60GB raw on 2TB NVMe|
+|Machine | q35|
+|BIOS | OVMF (UEFI)|
+|TPM | Enabled|
+|Network | vmbro0 VirtIO|
+|IP Address | DHCP|
+|Role | Domain Client|
+
+## Installation
+- Installed Windows 10 Pro (required for domain join)
+- Installed VirtIO for network and disk optimization and QEMU guest agent (Proxmox integration)
+- Disabled IPv6 to reslove homelab.local on DNS 10.0.0.20
+- Joined domain and renamed computer to WIN10-CLIENT
+- Verified domain login with user jdoe
 
 # Next Steps
-- create domain user accounts in the Users OU
-- created a windows 10 vm and join it to the domain
-- test domain login from windows 10 client
-- configure group policy
+- Configure Group Policy
+- Set a static IP on WIN10-CLIENT
+- Set up Remote Desktop access to WIN10-CLIENT
+- Expore Group Policy Object (GPO)
