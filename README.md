@@ -109,16 +109,25 @@ NOTE: Will upgrade to dedicated modem, AP and install pfSense for routing capabi
 
 ## Active Directory & DNS
 
-#### Active Directory & DNS
-- Installed Active Directory Domain Services (AD DS) and DNS Server roles from Server Manager
-- Promoted server to domain controller
-- Created new forest with root domain homelab.local
-- DNS Server configured and running on 10.0.0.20
-- Verified AD DS and DNS listed and active in Server Manager
-- Created organizational units (OU) Users, Groups, Computers
-- Created domain user John Doe (jdoe) for in User OU for testing
+### Domain Configuration 
+| Setting | Value |
+|---------|-------|
+| Domain | homelab.local |
+| Domain Controller | Windows Server 2022 |
+| DNS Server | 10.0.0.20 (static) |
+| Forest | homelab.local (new forest) |
 
-## Installation
+### Organizational Units
+- Users
+- Groups
+- Computers
+
+### Domain Users
+| User | Username | OU |
+|------|----------|----|
+| John Doe | jdoe | Users |
+
+### Windows 10 Client Setup
 - Installed Windows 10 Pro (required for domain join)
 - Installed VirtIO for network and disk optimization and QEMU guest agent (Proxmox integration)
 - Disabled IPv6 to reslove homelab.local on DNS 10.0.0.20
@@ -127,6 +136,5 @@ NOTE: Will upgrade to dedicated modem, AP and install pfSense for routing capabi
 
 # Next Steps
 - Configure Group Policy
-- Set a static IP on WIN10-CLIENT
 - Set up Remote Desktop access to WIN10-CLIENT
 - Expore Group Policy Object (GPO)
