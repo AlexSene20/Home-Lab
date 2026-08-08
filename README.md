@@ -2,8 +2,8 @@
 
 ## Overview
 Personal home lab built to develop practical IT and 
-networking skills in pursuit of a career in networking.
-Currently pursuing an Associates in Computer Technologies.
+networking skills in pursuit of a career in Information Technology.
+Currently pursuing an Associates in Computer Technologies and CompTIA A+ certification.
 
 ---
 
