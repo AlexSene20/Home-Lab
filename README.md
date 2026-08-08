@@ -15,7 +15,7 @@ Currently pursuing an Associates in Computer Technologies and CompTIA A+ certifi
 | Modem/router/AP | xfinity XB7 | WAN/Internet, DHCP, WiFi |
 | Switch | TP-Link TL-SG108PE V5.0 | LAN switching |
 
-NOTE: Will upgrade to dedicated modem, AP and install pfSense for routing capabilities on Proxmox VE
+NOTE: Will upgrade to dedicated modem, AP and pfSense is installed waiting on cutover for routing capabilities on Proxmox VE
 
 ### Proxmox Host
 | Component | Spec |
@@ -30,7 +30,7 @@ NOTE: Will upgrade to dedicated modem, AP and install pfSense for routing capabi
 
 ---
 
-## IP Address Plan
+### IP Address Plan
 | Device | IP Address | Type |
 |--------|------------|------|
 | XB7 | 10.0.0.1 | Static |
@@ -41,7 +41,7 @@ NOTE: Will upgrade to dedicated modem, AP and install pfSense for routing capabi
 | DHCP Range | 10.0.0.100-253 | Dynamic |
 
 **Subnet:** 255.255.255.0
-
+**DNS:** 75.75.75.75 (Comcast)
 ---
 
 ## Virtual Machines
@@ -49,6 +49,7 @@ NOTE: Will upgrade to dedicated modem, AP and install pfSense for routing capabi
 |----|-----|------|
 | Windows Server | Server 2022 | Active Directory/DNS |
 | Windows Client | Windows 10 | Domain client |
+
 
 ### Windows Server VM
 | Setting | Value |
