@@ -59,7 +59,3 @@
 - Enabled RDP firewall rule via netsh command
 - Verified RDP connection from gaming PC to WIN10-CLIENT using homelab\jdoe credentials
 - RDP fully functional
-
-Enabled RDP firewall rule via netsh command
-Verified RDP connection from gaming PC to WIN10-CLIENT using homelab\jdoe credentials
-RDP fully functional
