@@ -49,7 +49,6 @@
 - Installed using UFS filesystem and GPT partition scheme
 - Configured LAN IP and DHCP range
 - Completed setup wizard
-- Set DNS to 1.1.1.1 and 9.9.9.9
 - pfSense dashboard accessible and operational
 ### Phase 8 - Remote Desktop Setup
 - Added jdoe to Remote Desktop Users group via GPO restricted groups
