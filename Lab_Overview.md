@@ -137,5 +137,4 @@ NOTE: Will upgrade to dedicated modem, AP and pfSense is installed waiting on cu
 
 # Next Steps
 - Configure Group Policy
-- Set up Remote Desktop access to WIN10-CLIENT
 - Expore Group Policy Object (GPO)
